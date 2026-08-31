@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+  int x,y,a,b,d;
+  cin>>x>>y>>a>>b>>d;
+  int m = (x*y)+(a*b);
+  if(m>=d){
+      cout<<"yes"<<endl;
+  }
+  else{
+      cout<<"no"<<endl;
+  }
+}
