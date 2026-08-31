@@ -118,7 +118,7 @@ Therefore, the output is `1`.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-31T16:15:29.184Z  
+**Submitted:** 2026-08-31T16:15:48.834Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
