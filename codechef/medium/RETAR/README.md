@@ -92,7 +92,7 @@ Since $2800 < 3000$, the output is `NO`.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-31T16:09:33.430Z  
+**Submitted:** 2026-08-31T16:10:40.197Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -100,9 +100,9 @@ using namespace std;
 
 int main() {
 	// your code goes here
-  long long x,y,a,b,d;
-  cin>>x>>y>>a>>b>>d;
-  long long m = x*a+y*b;
+  long long X,a,Y,b,d;
+  cin>>X>>a>>Y>>b>>d;
+  long long m = X*a+Y*b;
   if(m>=d){
       cout<<"yes"<<endl;
   }
