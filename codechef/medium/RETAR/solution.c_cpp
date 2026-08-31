@@ -3,9 +3,9 @@ using namespace std;
 
 int main() {
 	// your code goes here
-  long long x,y,a,b,d;
-  cin>>x>>y>>a>>b>>d;
-  long long m = x*a+y*b;
+  long long X,a,Y,b,d;
+  cin>>X>>a>>Y>>b>>d;
+  long long m = X*a+Y*b;
   if(m>=d){
       cout<<"yes"<<endl;
   }
