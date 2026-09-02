@@ -66,7 +66,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T16:14:01.256Z  
+**Submitted:** 2026-09-02T16:14:18.999Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -96,7 +96,7 @@ while(t--){
         ans += abs(corrent - priv);
         priv= corrent;
     }
-    ans += abs(previous);
+    ans += abs(priv);
     cout<<ans/2<<endl;
 }
 }
