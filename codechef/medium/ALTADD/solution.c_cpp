@@ -25,7 +25,7 @@ while(t--){
         ans += abs(corrent - priv);
         priv= corrent;
     }
-    ans += abs(previous);
+    ans += abs(priv);
     cout<<ans/2<<endl;
 }
 }
