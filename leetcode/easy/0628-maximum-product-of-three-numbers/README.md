@@ -50,9 +50,9 @@ The only three numbers are -1, -2, and -3, so the maximum product is `(-1)  *(-2
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 8.3 MB  
-**Submitted:** 2026-09-08T04:00:59.423Z  
+**Runtime:** 4 ms (beats 55.82%)  
+**Memory:** 31.5 MB (beats 49.55%)  
+**Submitted:** 2026-09-08T04:04:40.452Z  
 
 ```cpp
 class Solution {
@@ -60,8 +60,8 @@ public:
     int maximumProduct(vector<int>& nums) {
       sort(nums.begin() , nums.end());
       int n= nums.size();
-      long long maximum = max(nums[0]*nums[1]*nums[2], nums[n-1]*nums[n-2]*nums[n-3]);
-      return maximum;
+     return max(nums[0]*nums[1]*nums[n-1], nums[n-3]*nums[n-2]*nums[n-1]);
+      
     }
 };
 ```
