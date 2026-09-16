@@ -56,7 +56,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-16T16:07:48.489Z  
+**Submitted:** 2026-09-16T16:07:14.469Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -81,7 +81,7 @@ int main() {
       for(int i=0 ;i<k; i++){
           sum +=a[i];
       }
-      long long ans = total*k;
+      long long ans = k*total;
       if(n%2==1){
           ans+=sum;
       }
