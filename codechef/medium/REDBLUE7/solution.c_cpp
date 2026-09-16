@@ -16,16 +16,24 @@ int main() {
       }
       sort(a.rbegin(),a.rend());
       int k=n/2;
-      long long sum=0;
+      long long sr=0,cr=0,sb=0,cb=0;
       for(int i=0 ;i<k; i++){
-          sum +=a[i];
+          sr +=a[i];
+          cr++;
       }
-      long long ans = k*total;
+      for(int i=k ; i<n ; i++){
+          sb+=a[i];
+          cb++;
+      }
+      long long ans = sr*cb+sb*cr;
       if(n%2==1){
-          ans+=sum;
+          sr+=a[k];
+          cr++;
+          sb-=a[k];
+          cb--;
+          ans = max(ans, sr*cb+sb*cr);
       }
-    
-       cout<<ans<<endl;
+      cout<<ans<<endl;
   }
   return 0;
 }
