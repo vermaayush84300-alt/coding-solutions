@@ -56,7 +56,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-16T16:14:32.463Z  
+**Submitted:** 2026-09-16T16:19:38.279Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -77,23 +77,14 @@ int main() {
       }
       sort(a.rbegin(),a.rend());
       int k=n/2;
-      long long sr=0,cr=0,sb=0,cb=0;
-      for(int i=0 ;i<k; i++){
-          sr +=a[i];
-          cr++;
-      }
-      for(int i=k ; i<n ; i++){
-          sb+=a[i];
-          cb++;
-      }
-      long long ans = sr*cb+sb*cr;
-      if(n%2==1){
-          sr+=a[k];
-          cr++;
-          sb-=a[k];
-          cb--;
-          ans = max(ans, sr*cb+sb*cr);
-      }
+      long long SR = accumulate(a.begin(), a.begin()+k, 0LL);
+        long long SB = accumulate(a.begin()+k, a.end(), 0LL);
+        long long ans = SR*(n-k) + SB*k;
+        if (n % 2 == 1) {
+            SR = accumulate(a.begin(), a.begin()+k+1, 0LL);
+            SB = accumulate(a.begin()+k+1, a.end(), 0LL);
+            ans = max(ans, SR*(n-k-1) + SB*(k+1));
+        }
       cout<<ans<<endl;
   }
   return 0;
