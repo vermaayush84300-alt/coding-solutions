@@ -1,4 +1,3 @@
-# cook your dish here
 
-for i in range(1, 6):
-    print(i, "-", i * i)
+for _ in range(4):
+    print("****")
