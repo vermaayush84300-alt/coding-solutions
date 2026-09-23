@@ -63,7 +63,7 @@ The second character of `ever` is `v`, while its fourth character is `r`. These 
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-23T14:50:52.832Z  
+**Submitted:** 2026-09-23T14:53:11.753Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -71,7 +71,14 @@ using namespace std;
 
 int main() {
 	// your code goes here
-
+      string s;
+      cin>>s;
+      if(s[0]==s[2] && s[1]==s[3]){
+          cout<<"yes"<<endl;
+      }
+      else{
+          cout<<"no"<<endl;
+      }
 }
 
 ```
