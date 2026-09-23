@@ -3,5 +3,33 @@ using namespace std;
 
 int main() {
 	// your code goes here
-
+    int t;
+    cin>>t;
+    while(t--){
+        int n,k;
+        cin>>n>>k;
+        vector<int>c(n+1);
+        for(int i=1;i<=n;i++){
+            cin>>c[i];
+        }
+        int ans = INT_MAX;
+        for(int i=1;i<=n;i++){
+            for(int j=i+1;j<=n;j++){
+                int left = min(i,j);
+                int right = max(i,j);
+                bool cl=(left-k<=1);
+                bool cr =(right+k>=n);
+                bool ng =(right-left<=2*k+1);
+                if(cl && cr && ng){
+                    ans= min(ans,c[i]+c[j]);
+                }
+            }
+        }
+        if(ans==INT_MAX){
+            cout<<-1<<endl;
+        }
+        else{
+            cout<<ans<<endl;
+        }
+    }
 }
