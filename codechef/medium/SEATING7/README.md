@@ -56,7 +56,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T15:47:01.892Z  
+**Submitted:** 2026-09-30T15:55:30.442Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -69,7 +69,7 @@ int main() {
     while(t--){
         int n,m,k;
         cin>>n>>m>>k;
-        vector<bool>occ(n+1,false);
+        bool occ[101]={};
         for(int i=0; i<m; i++){
             int x;
             cin>>x;
@@ -80,7 +80,7 @@ int main() {
             if(!occ[j]){
                 cout<<j;
                 count++;
-                if(count<k)
+                if(count==k)
                 cout<<"";
             }
             
