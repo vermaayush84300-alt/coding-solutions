@@ -57,7 +57,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T15:35:08.805Z  
+**Submitted:** 2026-09-30T15:36:59.166Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -65,7 +65,9 @@ using namespace std;
 
 int main() {
 	// your code goes here
-
+ int b,h,c;
+ cin>>b>>h>>c;
+ cout<<min(b/2,h+c)<<endl;
 }
 
 ```
