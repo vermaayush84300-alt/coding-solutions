@@ -56,7 +56,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T15:55:30.442Z  
+**Submitted:** 2026-09-30T15:59:45.728Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -69,19 +69,21 @@ int main() {
     while(t--){
         int n,m,k;
         cin>>n>>m>>k;
-        bool occ[101]={};
+       vector<int>occ(n+1,0);
         for(int i=0; i<m; i++){
             int x;
             cin>>x;
-            occ[x] = true;
+            occ[x] = 1;
         }
         int count =0;
-        for(int j=1; j<=n && count<k ; j++){
-            if(!occ[j]){
+        for(int j=1; j<=n ; j++){
+            if(occ[j]==0){
                 cout<<j;
                 count++;
-                if(count==k)
-                cout<<"";
+                if(count==k){
+                    break;
+                }
+               cout<<" ";
             }
             
         }
