@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+string complement(string S) {
+    string result = "";
+    for (char c : S) {
+        if (c == 'A') result += 'T';
+        else if (c == 'T') result += 'A';
+        else if (c == 'C') result += 'G';
+        else if (c == 'G') result += 'C';
+    }
+    return result;
+}
+
+int main() {
+    
+
+    int T; 
+    cin >> T;
+    while (T--) {
+        int n; 
+        cin >> n;
+        string s; 
+        cin >> s;
+
+        cout << complement(s) << "\n";
+    }
+    return 0;
+}
+
