@@ -72,7 +72,7 @@ NO
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T15:41:47.329Z  
+**Submitted:** 2026-10-07T15:46:32.424Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -80,7 +80,22 @@ using namespace std;
 
 int main() {
 	// your code goes here
-
+   int t;
+   cin>>t;
+   while(t--){
+       int n;
+       cin>>n;
+       string a,b;
+       cin>>a>>b;
+       int countA = count(a.begin(), a.end(),'1');
+       int countB = count(b.begin(), b.end() ,'1');
+       if((countA%2)==(countB%2)){
+           cout<<"yes"<<endl;
+       }
+       else{
+           cout<<"no"<<endl;
+       }
+   }
 }
 
 ```
