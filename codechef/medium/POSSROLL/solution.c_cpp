@@ -3,5 +3,13 @@ using namespace std;
 
 int main() {
 	// your code goes here
-
+  int x,k,y;
+  cin>>x>>K>>y;
+  if(y%k==0){
+      int n = y/k;
+      if(n>=1 && n<=x) {cout<<"yes"<<endl;}
+      else{
+          cout<<"no"<<endl;
+      }
+  }
 }
