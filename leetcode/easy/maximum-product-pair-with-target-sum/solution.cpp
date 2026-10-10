@@ -5,7 +5,7 @@ public:
         long long maxproduct= LLONG_MIN;
         vector<int>ans = {-1,-1};
         for(int i=0; i<n ; i++){
-            for(int j=0 ;j<i; j++){
+            for(int j=0 ;j<n; j++){
                 if(i==j) {continue ;}
                 if(1LL*nums[i]+nums[j]==target && nums[i]>nums[j]){
                     long long product = 1LL*nums[i]*nums[j];
