@@ -70,8 +70,8 @@ Since `-2 > -12`, the pair at indices `(3, 1)` is chosen and the answer is `[3, 
 
 **Language:** C++  
 **Runtime:** 0 ms  
-**Memory:** 8.3 MB  
-**Submitted:** 2026-10-10T15:25:32.759Z  
+**Memory:** 8.4 MB  
+**Submitted:** 2026-10-10T15:25:47.786Z  
 
 ```cpp
 class Solution {
@@ -81,7 +81,7 @@ public:
         long long maxproduct= LLONG_MIN;
         vector<int>ans = {-1,-1};
         for(int i=0; i<n ; i++){
-            for(int j=0 ;j<i; j++){
+            for(int j=0 ;j<n; j++){
                 if(i==j) {continue ;}
                 if(1LL*nums[i]+nums[j]==target && nums[i]>nums[j]){
                     long long product = 1LL*nums[i]*nums[j];
