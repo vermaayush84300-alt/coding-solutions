@@ -54,22 +54,28 @@ Output: 12
 
 ## Solution
 
-**Language:** Python  
+**Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 19.2 MB (beats 89.02%)  
-**Submitted:** 2026-10-22T03:52:49.119Z  
+**Memory:** 7.9 MB (beats 79.67%)  
+**Submitted:** 2026-10-22T03:59:47.199Z  
 
-```py
-class Solution:
-    def numberOfSteps(self, num: int) -> int:
-        step =0
-        while num>0:
-            if num%2==0:
-                num//=2
-            else:
-                num-=1
-            step+=1
-        return step
+```cpp
+class Solution {
+public:
+    int numberOfSteps(int num) {
+        int step =0;
+        while(num>0){
+            if(num%2==0){
+                num/=2;
+            }
+            else{
+                num--;
+            }
+            step++;
+        }
+        return step;
+    }
+};
 ```
 
 ---
