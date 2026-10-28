@@ -63,13 +63,45 @@ BBBBAAAAABBBBBBB
 
 ## Solution
 
-**Language:** Python  
+**Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T15:46:52.099Z  
+**Submitted:** 2026-10-28T15:53:12.082Z  
 
-```py
-# cook your dish here
+```c_cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+ int t;
+ cin>>t;
+ while(t--){
+     int n;
+     string s;
+     cin>>n>>s;
+     
+     int count=0;
+     int streak =0;
+     char prev= " ";
+     for(char ch :s){
+         if(ch==prev){
+             streak++;
+         }
+         else{
+             streak=1;
+             prev=ch;
+         }
+         if(streak==3){
+             count++;
+             streak=0;
+             prev= " ";
+         }
+     }
+     
+     cout<<count<<endl;
+ }
+}
 
 ```
 
