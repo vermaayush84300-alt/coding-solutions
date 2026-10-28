@@ -9,7 +9,7 @@ for _ in range(t):
         if s[i]=='1':
             pose = min(n-1,i+k)
             alarm+=1
-            i=pose+n-1
+            i=pose+1
         else:
             i+=1
     print(alarm)
