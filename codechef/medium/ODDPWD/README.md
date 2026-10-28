@@ -78,7 +78,7 @@ The password is `WEC`.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T15:40:42.605Z  
+**Submitted:** 2026-10-28T15:40:46.708Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
