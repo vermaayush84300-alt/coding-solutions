@@ -70,7 +70,7 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T16:05:28.090Z  
+**Submitted:** 2026-10-28T16:06:16.775Z  
 
 ```py
 # cook your dish here
@@ -84,7 +84,7 @@ for _ in range(t):
         if s[i]=='1':
             pose = min(n-1,i+k)
             alarm+=1
-            i=pose+n-1
+            i=pose+1
         else:
             i+=1
     print(alarm)
