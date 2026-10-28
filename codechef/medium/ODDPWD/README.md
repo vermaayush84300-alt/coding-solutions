@@ -75,15 +75,20 @@ The password is `WEC`.
 
 ## Solution
 
-**Language:** Python  
+**Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T15:43:03.126Z  
+**Submitted:** 2026-10-28T15:41:10.258Z  
 
-```py
-# cook your dish here
-s = input()
-print(s[0]+s[2]+s[4])
+```c_cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+
+}
+
 ```
 
 ---
