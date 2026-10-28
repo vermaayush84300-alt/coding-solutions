@@ -66,7 +66,7 @@ BBBBAAAAABBBBBBB
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T15:53:12.082Z  
+**Submitted:** 2026-10-28T15:54:03.351Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -83,7 +83,7 @@ int main() {
      
      int count=0;
      int streak =0;
-     char prev= " ";
+     char prev= ' ';
      for(char ch :s){
          if(ch==prev){
              streak++;
@@ -95,7 +95,7 @@ int main() {
          if(streak==3){
              count++;
              streak=0;
-             prev= " ";
+             prev= ' ';
          }
      }
      
