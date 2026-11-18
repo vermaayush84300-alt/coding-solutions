@@ -14,6 +14,8 @@ Return  *the maximum amount of water a container can store*.
 
  
 
+Original
+C++
  **Example 1:** 
 
 ```
@@ -42,9 +44,9 @@ Output: 1
 ## Solution
 
 **Language:** C++  
-**Runtime:** 5 ms (beats 8.17%)  
-**Memory:** 62.7 MB (beats 93.20%)  
-**Submitted:** 2026-10-29T15:04:19.964Z  
+**Runtime:** 2 ms (beats 39.80%)  
+**Memory:** 63 MB (beats 30.90%)  
+**Submitted:** 2026-11-18T12:29:31.089Z  
 
 ```cpp
 class Solution {
