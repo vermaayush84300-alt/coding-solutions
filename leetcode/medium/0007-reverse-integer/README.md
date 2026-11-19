@@ -45,9 +45,9 @@ Output: 21
 ## Solution
 
 **Language:** C++  
-**Runtime:** 4 ms (beats 19.16%)  
+**Runtime:** 3 ms (beats 34.76%)  
 **Memory:** 8.6 MB (beats 56.53%)  
-**Submitted:** 2026-11-19T17:17:12.210Z  
+**Submitted:** 2026-11-19T17:17:38.727Z  
 
 ```cpp
 class Solution {
@@ -57,7 +57,7 @@ public:
         int original = x;
         while(x!=0){
             rev = rev*10+x%10;
-            x/=10;\
+            x/=10;
         } 
        if (rev < INT_MIN || rev > INT_MAX)
             return 0;
