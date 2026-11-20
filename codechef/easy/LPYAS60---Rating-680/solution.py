@@ -1,10 +1,12 @@
 # cook your dish here
-num = int(input())
-if num>90:
+
+marks = int(input())
+
+if marks > 90:
     print("A")
-elif num>70:
+elif marks > 70:
     print("B")
-elif num>=40:
+elif marks >= 40:
     print("C")
 else:
-    print("D")
+    print("F")
