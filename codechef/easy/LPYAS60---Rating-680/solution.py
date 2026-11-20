@@ -1,5 +1,5 @@
 # cook your dish here
-num = float(input())
+num = int(input())
 if num>90:
     print("A")
 elif num>70:
