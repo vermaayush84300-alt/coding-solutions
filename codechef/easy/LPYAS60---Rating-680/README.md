@@ -63,11 +63,11 @@ F
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-20T14:20:20.153Z  
+**Submitted:** 2026-11-20T14:20:39.603Z  
 
 ```py
 # cook your dish here
-num = float(input())
+num = int(input())
 if num>90:
     print("A")
 elif num>70:
